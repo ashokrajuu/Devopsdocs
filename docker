@@ -5,3 +5,8 @@ to stop an dremove all the container
 
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
+
+
+Docker UI: sudo docker run -d -p 9000:9000  abh1nav/dockerui:latest -e="http://104.197.147.212:4243"
+
+https://hub.docker.com/r/abh1nav/dockerui/
