@@ -5,4 +5,9 @@ sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get install ansible
 
+ansible -m ping all
 ansible -i hostfile -m ping server
+
+ansible-playbook playbook.yml
+
+ansible-playbook -l host_subset playbook.yml
